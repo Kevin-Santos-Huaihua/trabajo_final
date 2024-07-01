@@ -69,7 +69,8 @@ def crear_base_datos():
             IsRetired INTEGER,
             IsSpamList INTEGER,
             IsMalware INTEGER
-            )```
+            )
+```
 
 #### 3.3. Clases de Subformularios
     SubFormularioLogViewer:
@@ -90,21 +91,21 @@ def crear_base_datos():
 ### 4. Implementación de Funcionalidades
 #### 4.1. Visor de Logs
  
-    Carga de Archivos:
-
+    - `Carga de Archivos`:
+```python
     self.boton_cargar_archivo = tk.Button(self, text="Cargar Archivo", command=self.cargar_archivo)
     self.boton_cargar_archivo.pack(pady=10)
-
-    Filtrado de Entradas:
-
+```
+    - `Filtrado de Entradas`:
+```python
     self.filtro_severidad = tk.StringVar(self)
     self.filtro_severidad.set("Seleccionar Severidad")
     self.menu_filtro_severidad = tk.OptionMenu(self, self.filtro_severidad, "INFO", "WARNING", "ERROR")
     self.menu_filtro_severidad.pack(pady=5)
-
-    Estadísticas:
-
+```
+    - `Estadísticas`:
+```python
     self.texto_estadisticas = tk.Text(self, height=10, width=50)
     self.texto_estadisticas.pack(pady=10)
-
+```
 
