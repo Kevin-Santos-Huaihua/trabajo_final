@@ -66,7 +66,8 @@ def crear_base_datos():
             IsRetired INTEGER,
             IsSpamList INTEGER,
             IsMalware INTEGER
-        )''')
+        )'''
+
 #### 3.3. Clases de Subformularios
     SubFormularioLogViewer:
     Esta clase gestiona la funcionalidad del visor de logs.
