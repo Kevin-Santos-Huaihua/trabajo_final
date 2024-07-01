@@ -46,6 +46,7 @@ def get_size(size_bytes):
     p = math.pow(1024, i)
     s = round(size_bytes / p, 2)
     return "%s %s" % (s, size_name[i])
+```
 - `crear_base_datos`:
 ```python
 def crear_base_datos():
@@ -68,7 +69,7 @@ def crear_base_datos():
             IsRetired INTEGER,
             IsSpamList INTEGER,
             IsMalware INTEGER
-        )''')
+            )```
 
 #### 3.3. Clases de Subformularios
     SubFormularioLogViewer:
