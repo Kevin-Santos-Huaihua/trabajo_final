@@ -109,4 +109,63 @@ def crear_base_datos():
     self.texto_estadisticas = tk.Text(self, height=10, width=50)
     self.texto_estadisticas.pack(pady=10)
 ```
+#### 4.2. Trabajo con API
+-Interacción con la API de HIBP:
+```python
+url = "https://haveibeenpwned.com/api/v3/breaches"
+headers = {"hibp-api-key": api_key}
+response = requests.get(url, headers=headers)
+```
+-Gestión de la Base de Datos:
+```python
+with sqlite3.connect("pwned.db") as conexion:
+    cursor = conexion.cursor()
+    cursor.execute("INSERT INTO breaches (...) VALUES (...)", (data))
+```
+#### 4.3. Calculadora de Subredes
+-Cálculo de Atributos:
+```python
+import ipaddress
 
+def calcular_subred(ip, mascara):
+    red = ipaddress.IPv4Network(f"{ip}/{mascara}", strict=False)
+    return {
+        "dirección_red": red.network_address,
+        "dirección_broadcast": red.broadcast_address,
+        "primera_dirección": list(red.hosts())[0],
+        "última_dirección": list(red.hosts())[-1],
+        "num_hosts": red.num_addresses - 2
+    }
+```
+### 5. Resultados Obtenidos
+-Visor de Logs: El visor de logs permite cargar y filtrar grandes archivos de logs eficientemente, proporcionando estadísticas detalladas y facilitando la identificación de problemas.
+-Trabajo con API: La interacción con la API de HIBP y la gestión de la base de datos permite mantener una base de datos actualizada de brechas de seguridad, con capacidades completas de CRUD.
+-Calculadora de Subredes: La calculadora de subredes proporciona información detallada sobre las subredes, lo cual es crucial para la planificación y gestión de redes.
+### 6. Recomendaciones y Mejoras
+-Seguridad de la API: Utilizar técnicas de almacenamiento seguro para claves API, como variables de entorno o gestores de secretos.
+-Optimización del Procesamiento de Logs: Implementar técnicas más avanzadas para el procesamiento y filtrado de logs, especialmente para archivos de gran tamaño.
+-Validación de Entradas: Incluir validaciones exhaustivas para las entradas del usuario, asegurando la integridad y correcta interpretación de los datos ingresados.
+-Documentación y Comentarios: Ampliar la documentación del código y agregar comentarios detallados para mejorar la mantenibilidad y facilitar futuras mejoras.
+-Manejo de Errores: Mejorar el manejo de errores y excepciones, especialmente en operaciones críticas como el acceso a la base de datos y las solicitudes HTTP.
+### 7. Conclusión
+El proyecto ha logrado implementar una aplicación de escritorio robusta y multifuncional, que integra de manera efectiva la visualización y filtrado de logs, la interacción con la API de HIBP para la gestión de datos de brechas de seguridad, y una calculadora de subredes completa. Con las recomendaciones propuestas, la aplicación puede ser aún más eficiente, segura y fácil de mantener, proporcionando una herramienta valiosa para la gestión de redes y la seguridad informática.
+
+### Capturas del funcionamiento del código y la interfaz gráfica
+
+#### Pantalla de inicio
+![Pantalla de inicio](C:\Users\Lenovo\Downloads\pantalla de inicio.jpeg)
+
+#### Carga de archivo de log
+![Carga de archivo](ruta/a/la/imagen_carga.jpg)
+
+#### Filtrado de logs
+![Filtrado de logs](ruta/a/la/imagen_filtrado.jpg)
+
+#### Estadísticas de logs
+![Estadísticas de logs](ruta/a/la/imagen_estadisticas.jpg)
+
+#### Trabajo con API
+![Trabajo con API](ruta/a/la/imagen_api.jpg)
+
+#### Calculadora de subredes
+![Calculadora de subredes](ruta/a/la/imagen_calculadora.jpg)
