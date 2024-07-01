@@ -155,17 +155,14 @@ El proyecto ha logrado implementar una aplicación de escritorio robusta y multi
 #### Pantalla de inicio
 ![Pantalla de inicio](pantalla_de_inicio.jpeg)
 
-#### Carga de archivo de log
+#### Calculadora de subredes
+![Calculadora de subredes](ruta/a/la/imagen_calculadora.jpg)
+
+#### Visor de archivo de log
 ![Carga de archivo](ruta/a/la/imagen_carga.jpg)
-
-#### Filtrado de logs
-![Filtrado de logs](ruta/a/la/imagen_filtrado.jpg)
-
-#### Estadísticas de logs
-![Estadísticas de logs](ruta/a/la/imagen_estadisticas.jpg)
 
 #### Trabajo con API
 ![Trabajo con API](ruta/a/la/imagen_api.jpg)
 
-#### Calculadora de subredes
+#### Analizador de PC
 ![Calculadora de subredes](ruta/a/la/imagen_calculadora.jpg)
