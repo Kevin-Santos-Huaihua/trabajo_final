@@ -153,7 +153,7 @@ El proyecto ha logrado implementar una aplicación de escritorio robusta y multi
 ### Capturas del funcionamiento del código y la interfaz gráfica
 
 #### Pantalla de inicio
-![Pantalla de inicio](C:\Users\Lenovo\Downloads\pantalla de inicio.jpeg)
+![Pantalla de inicio](C:\Users\Lenovo\Downloads\pantalla de inicio.jpg)
 
 #### Carga de archivo de log
 ![Carga de archivo](ruta/a/la/imagen_carga.jpg)
