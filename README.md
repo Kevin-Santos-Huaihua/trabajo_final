@@ -74,20 +74,23 @@ def crear_base_datos():
 
 #### 3.3. Clases de Subformularios
 -SubFormularioLogViewer:
-    Esta clase gestiona la funcionalidad del visor de logs.
-    
-    Cargar Archivo de Log: Permite al usuario seleccionar y cargar un archivo de log.
-    Filtrar Logs: Proporciona opciones para filtrar las entradas de log por fecha, nivel de severidad y origen.
-    Mostrar Estadísticas: Muestra estadísticas basadas en los logs filtrados.
+
+Esta clase gestiona la funcionalidad del visor de logs.
+Cargar Archivo de Log: Permite al usuario seleccionar y cargar un archivo de log.
+Filtrar Logs: Proporciona opciones para filtrar las entradas de log por fecha, nivel de severidad y origen.
+Mostrar Estadísticas: Muestra estadísticas basadas en los logs filtrados.
+
 -SubFormularioTrabajoAPI:
 
-    Esta clase maneja la interacción con la API de HIBP y la base de datos SQLite.
-    Extracción de Datos: Recupera datos de brechas de seguridad utilizando la API de HIBP.
-    Gestión de la Base de Datos: Permite insertar, modificar, eliminar y mostrar datos de brechas en la base de datos.
+Esta clase maneja la interacción con la API de HIBP y la base de datos SQLite.
+Extracción de Datos: Recupera datos de brechas de seguridad utilizando la API de HIBP.
+Gestión de la Base de Datos: Permite insertar, modificar, eliminar y mostrar datos de brechas en la base de datos.
+
 -SubFormularioCalculadoraSubred:
 
-    Esta clase realiza cálculos de subredes.
-    Cálculo de Atributos de Subred: Calcula y muestra atributos como la dirección de red, máscara de subred, dirección de broadcast, primera y última dirección utilizable, máscara de comodín y número     de hosts.
+Esta clase realiza cálculos de subredes.
+Cálculo de Atributos de Subred: Calcula y muestra atributos como la dirección de red, máscara de subred, dirección de broadcast, primera y última dirección utilizable, máscara de comodín y número de hosts.
+    
 ### 4. Implementación de Funcionalidades
 #### 4.1. Visor de Logs
  
