@@ -156,13 +156,19 @@ El proyecto ha logrado implementar una aplicación de escritorio robusta y multi
 ![Pantalla de inicio](pantalla_de_inicio.jpeg)
 
 #### Calculadora de subredes
-![Calculadora de subredes](ruta/a/la/imagen_calculadora.jpg)
+![Calculadora de subredes](subneteo.jpeg)
 
 #### Visor de archivo de log
-![Carga de archivo](ruta/a/la/imagen_carga.jpg)
+![Carga de archivo](visor_log.jpeg)
 
 #### Trabajo con API
-![Trabajo con API](ruta/a/la/imagen_api.jpg)
+![Trabajo con API](API.jpeg)
 
 #### Analizador de PC
-![Calculadora de subredes](ruta/a/la/imagen_calculadora.jpg)
+![Calculadora de subredes](analizador.jpeg)
+
+#### Enlace GitHub:
+https://github.com/Kevin-Santos-Huaihua/trabajo_final.git
+
+#### Enlace YouTube:
+https://youtu.be/AoxXIJsNucc?si=-AdyVfxMV1oaxGpV
